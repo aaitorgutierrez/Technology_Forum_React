@@ -1,6 +1,6 @@
 import { updateToken } from "../../util/updateToken";
 import { API } from "./service.config";
-
+//✔
 export const registerUser = async (formData) => {
   return API.post("/users/register", formData, {
     headers: { "Content-Type": "multipart/form-data" },
@@ -12,7 +12,7 @@ export const registerUser = async (formData) => {
 };
 
 //! -----------------------CHECK CODE -----------------------------------
-
+//✔
 export const checkCodeConfirmationUser = async (formData) => {
   return API.post("/users/check", formData)
     .then((res) => res)

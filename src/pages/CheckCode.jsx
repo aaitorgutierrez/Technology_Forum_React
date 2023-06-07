@@ -48,7 +48,7 @@ const CheckCode = () => {
     const userLocal = localStorage.getItem("user");
     if (userLocal == null) {
       const formDataCustom = { email: allUser.data?.user?.email };
-      console.log(formDataCustom);
+      //console.log(formDataCustom);
       setSend(true);
       setResResend(await resendCodeConfirmationUser(formDataCustom));
       setSend(false);
@@ -68,7 +68,7 @@ const CheckCode = () => {
   }, [res]);
 
   useEffect(() => {
-    console.log(resResend);
+    //console.log(resResend);
     useResendCodeError(resResend);
   }, [resResend]);
 

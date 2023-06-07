@@ -23,8 +23,6 @@ const useDeleteUser = (setUser) => {
           });
           setUser(() => null);
           localStorage.removeItem("user");
-
-          navigate("/register");
           break;
 
         default:
