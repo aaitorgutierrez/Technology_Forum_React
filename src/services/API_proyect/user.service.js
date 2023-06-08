@@ -42,7 +42,8 @@ export const autoLoginUser = async (formData) => {
 //!  ----------------------forgot password ---------------------------------
 
 export const forgotPasswordUser = async (formData) => {
-  return API.patch("/users/forgotpassword", formData)
+  console.log("forgotpassword => formData", formData);
+  return API.patch("/users/forgotpassword/forgotpassword", formData)
     .then((res) => res)
     .catch((error) => {
       return error;
